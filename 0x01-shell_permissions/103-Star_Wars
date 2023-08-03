@@ -1,3 +1,2 @@
 #!/bin/bash
-dism /online /Enable-Feature:TelnetClient
-telnet towel.blinkenlights.nl
+dism/online/Enable-Feature:TelnetClient
