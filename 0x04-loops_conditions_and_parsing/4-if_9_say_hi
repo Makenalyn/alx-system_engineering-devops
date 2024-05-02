@@ -2,11 +2,11 @@
 #using while til ninth, then more code tenth
 
 itr=1
-while [ $itr -le 9 ]
+while [ $itr -le 10 ]
 do
 	echo "Best School"
 	((itr++))
+	if [ $itr -eq 10 ]; then
+		echo "Hi"
+	fi
 done
-
-echo "Hi"
-echo "Best School"
