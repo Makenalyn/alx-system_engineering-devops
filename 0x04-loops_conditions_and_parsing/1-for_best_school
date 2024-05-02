@@ -2,7 +2,7 @@
 #this scrpt writes from 1 to 10
 
 itr=1
-for n in {1..10}
+for itr in {1..10}
 do
 	echo Best School
 	((itr++))
