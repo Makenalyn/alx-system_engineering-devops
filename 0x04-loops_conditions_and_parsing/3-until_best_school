@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#use until to reach ten
+
+i=1
+until [ ! $i -le 10 ]
+do
+	echo "Best School"
+	((i++))
+done
+
