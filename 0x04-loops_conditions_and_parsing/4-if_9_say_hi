@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#using while til ninth, then more code tenth
+
+itr=1
+while [ $itr -le 9 ]
+do
+	echo "Best School"
+	((itr++))
+done
+
+echo "Hi"
+echo "Best School"
