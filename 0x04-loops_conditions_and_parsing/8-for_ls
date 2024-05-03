@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#ls part of the name after first dash
+
+for file in *; do
+	if [[ $file == *-* ]]; then
+		name="${file#*-}"
+		echo "$name"
+	else
+		echo "$file"
+	fi
+done
