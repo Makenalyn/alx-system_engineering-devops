@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#dispalys lines containing bash
+# shellcheck disable=SC2009
+
+processes=$(pgrep -f bash)
+
+for processids in $processes; do
+	processname=$(ps -p "$processids" -o comm=)
+	echo "$processids $processname"
+done
