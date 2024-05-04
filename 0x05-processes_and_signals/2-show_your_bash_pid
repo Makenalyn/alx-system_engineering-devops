@@ -5,6 +5,6 @@
 processes=$(pgrep -f bash)
 
 for processids in $processes; do
-	processname=$(ps -p $processids -o comm=)
+	processname=$(ps -p "$processids" -o comm=)
 	echo "$processids $processname"
 done
