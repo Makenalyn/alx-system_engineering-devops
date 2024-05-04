@@ -2,4 +2,9 @@
 #dispalys lines containing bash
 # shellcheck disable=SC2009
 
-top | grep "bash"
+processes=$(pgrep -f bash)
+
+for processids in $processes; do
+	processname=$(ps -p $processids -o comm=)
+	echo "$processids $processname"
+done
