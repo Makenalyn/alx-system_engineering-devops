@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#ping the given address five times
+a=1
+for {1..5}; do
+	ping $1
+done
