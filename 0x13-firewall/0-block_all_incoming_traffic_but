@@ -1,1 +1,2 @@
+ufw default deny incoming
 ufw allow 22 443 80
